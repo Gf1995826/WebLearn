@@ -1,0 +1,36 @@
+@import "../../styles.scss";
+.main-menu {
+  overflow: auto;
+  display: inline-block;
+  position: relative;
+  width: 10%;
+  height: 90%;
+  padding-top: 1%;
+  a {
+    text-align: center;
+    text-decoration: none;
+    div {
+      height: 3em;
+      line-height: 3em;
+    }
+    &.activeItem{
+      div{
+        background-image: url("../../assets/image/home/subItemActive.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.main-text {
+  overflow: auto;
+  display: inline-block;
+  width: 90%;
+  height: 90%;
+  padding: 1%;
+  background: url('../../assets/image/home/mainbg.jpg');
+  background-size: 100%;
+}

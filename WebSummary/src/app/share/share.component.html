@@ -1,0 +1,6 @@
+<div class="main-menu">
+    <a *ngFor="let item of items" [routerLink]="[item.link]" routerLinkActive="activeItem"><div>{{item.name}}</div></a>
+</div>
+<div class="main-text">
+    <router-outlet></router-outlet>
+</div>

@@ -10,22 +10,11 @@
 </div>
 
 <div class="mainShow" *ngIf="!showFirstPage">
-
   <div class="main-title">
-    <a [routerLink]="[ '/path' ]" routerLinkActive="activeItem"><div>默认按钮</div></a>
-    <a [routerLink]="[ '/path1' ]" routerLinkActive="activeItem"><div>默认按钮</div></a>
-    <a [routerLink]="[ '/path2' ]" routerLinkActive="activeItem"><div>默认按钮</div></a>
-    <a [routerLink]="[ '/path3' ]" routerLinkActive="activeItem"><div>默认按钮</div></a>
+    <a [routerLink]="[ '/basic' ]" routerLinkActive="activeItem"><div>基本知识</div></a>
+    <a [routerLink]="[ '/framework' ]" routerLinkActive="activeItem"><div>框架</div></a>
+    <a [routerLink]="[ '/plugIn' ]" routerLinkActive="activeItem"><div>前端插件</div></a>
+    <a [routerLink]="[ '/practice' ]" routerLinkActive="activeItem"><div>实战练习</div></a>
   </div>
-  <div class="main-menu">
-      <a [routerLink]="[ '/path5' ]" routerLinkActive="activeItem"><div>默认按钮</div></a>
-      <a [routerLink]="[ '/path6' ]" routerLinkActive="activeItem"><div>默认按钮</div></a>
-      <a [routerLink]="[ '/path7' ]" routerLinkActive="activeItem"><div>默认按钮</div></a>
-      <a [routerLink]="[ '/path8' ]" routerLinkActive="activeItem"><div>默认按钮</div></a>
-  </div>
-  <div class="main-text">
-      <router-outlet></router-outlet>
-  </div>
-
-  
+  <router-outlet></router-outlet>
 </div>

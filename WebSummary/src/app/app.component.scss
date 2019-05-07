@@ -26,6 +26,7 @@
 .mainShow{
   height: 90vh;
   position: relative;
+  padding: 1%;
   .main-title{
     height: 5em;
     line-height: 5em;
@@ -49,31 +50,6 @@
       }
     }
   }
-  .main-menu{
-    overflow: auto;
-    display: inline-block;
-    position: relative;
-    width: 10%;
-    height:90%;
-    padding-top: 1%;
-    a{
-      text-align: center;
-      div{
-        height: 3em;
-        line-height: 3em;
-        background-image: url('../assets/image/home/subItemActive.jpg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center;
-        color: #fff;
-        font-weight: bold;
-      }
-    }
-  }
-  .main-text{
-    overflow: auto;
-    display: inline-block;
-    width: 90%;
-    height: 90%;
-  }
 }
+
+
