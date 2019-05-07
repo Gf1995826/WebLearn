@@ -8,7 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent implements OnInit {
 
-  showFirstPage: boolean = false
+  showFirstPage: boolean = true
   currentLanguage: string = 'zh'
   constructor(private translate: TranslateService) {
 
