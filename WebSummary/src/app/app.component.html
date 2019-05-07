@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="home-title">
+  <button class="language-btn" [ngClass]="{'selected': currentLanguage=='zh'}"
+    (click)="changeLang('zh')">{{'home.zh'|translate}}</button>
+  <button class="language-btn" [ngClass]="{'selected': currentLanguage=='en'}"
+    (click)="changeLang('en')">{{'home.en'|translate}}</button>
+</div>
+<div class="firstShow" *ngIf="showFirstPage" (click)="showFirstPage=false">
+  {{'home.tip_title'|translate}}
+</div>
+
+<div class="mainShow" *ngIf="!showFirstPage">
+
+  <div class="main-title">
+    <a [routerLink]="[ '/path' ]" routerLinkActive="activeItem"><div>默认按钮</div></a>
+    <a [routerLink]="[ '/path1' ]" routerLinkActive="activeItem"><div>默认按钮</div></a>
+    <a [routerLink]="[ '/path2' ]" routerLinkActive="activeItem"><div>默认按钮</div></a>
+    <a [routerLink]="[ '/path3' ]" routerLinkActive="activeItem"><div>默认按钮</div></a>
+  </div>
+  <div class="main-menu">
+      <a [routerLink]="[ '/path5' ]" routerLinkActive="activeItem"><div>默认按钮</div></a>
+      <a [routerLink]="[ '/path6' ]" routerLinkActive="activeItem"><div>默认按钮</div></a>
+      <a [routerLink]="[ '/path7' ]" routerLinkActive="activeItem"><div>默认按钮</div></a>
+      <a [routerLink]="[ '/path8' ]" routerLinkActive="activeItem"><div>默认按钮</div></a>
+  </div>
+  <div class="main-text">
+      <router-outlet></router-outlet>
+  </div>
+
+  
+</div>

@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+html *{
+    font-family: cursive;
+    color: #3c3c3c
+}
+
+@mixin btn-common {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    &:hover{
+        font-weight: bold
+    }
+}
+
+@mixin btn-common-seleted {
+    font-weight: bold;
+    background-image: url("../assets/image/home/activeItem.jpg");
+    background-size: 50%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
